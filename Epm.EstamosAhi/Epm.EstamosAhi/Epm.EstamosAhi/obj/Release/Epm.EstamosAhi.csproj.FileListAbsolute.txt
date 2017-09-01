@@ -1,0 +1,6 @@
+/Users/dieberroam/Documents/epm/Movilidad/Xamarin/Epm.EstamosAhi/Epm.EstamosAhi/Epm.EstamosAhi/obj/Release/Epm.EstamosAhi.csprojResolveAssemblyReference.cache
+/Users/dieberroam/Documents/epm/Movilidad/Xamarin/Epm.EstamosAhi/Epm.EstamosAhi/Epm.EstamosAhi/obj/Release/Epm.EstamosAhi.csproj.CoreCompileInputs.cache
+/Users/dieberroam/Documents/epm/Movilidad/Xamarin/Epm.EstamosAhi/Epm.EstamosAhi/Epm.EstamosAhi/obj/Release/Epm.EstamosAhi.App.xaml.g.cs
+/Users/dieberroam/Documents/epm/Movilidad/Xamarin/Epm.EstamosAhi/Epm.EstamosAhi/Epm.EstamosAhi/obj/Release/Epm.EstamosAhi.Splash.xaml.g.cs
+/Users/dieberroam/Documents/epm/Movilidad/Xamarin/Epm.EstamosAhi/Epm.EstamosAhi/Epm.EstamosAhi/obj/Release/Epm.EstamosAhi.Login.xaml.g.cs
+/Users/dieberroam/Documents/epm/Movilidad/Xamarin/Epm.EstamosAhi/Epm.EstamosAhi/Epm.EstamosAhi/obj/Release/Epm.EstamosAhi.Dashboard.xaml.g.cs

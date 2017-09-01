@@ -1,0 +1,8 @@
+/Users/dieberroam/Documents/epm/Movilidad/Xamarin/Epm.EstamosAhi/Epm.EstamosAhi.Infraestructura/bin/Release/Epm.EstamosAhi.Infraestructura.dll
+/Users/dieberroam/Documents/epm/Movilidad/Xamarin/Epm.EstamosAhi/Epm.EstamosAhi.Infraestructura/bin/Release/Epm.EstamosAhi.Infraestructura.pdb
+/Users/dieberroam/Documents/epm/Movilidad/Xamarin/Epm.EstamosAhi/Epm.EstamosAhi.Infraestructura/bin/Release/Newtonsoft.Json.dll
+/Users/dieberroam/Documents/epm/Movilidad/Xamarin/Epm.EstamosAhi/Epm.EstamosAhi.Infraestructura/bin/Release/Newtonsoft.Json.xml
+/Users/dieberroam/Documents/epm/Movilidad/Xamarin/Epm.EstamosAhi/Epm.EstamosAhi.Infraestructura/obj/Release/Epm.EstamosAhi.Infraestructura.csprojResolveAssemblyReference.cache
+/Users/dieberroam/Documents/epm/Movilidad/Xamarin/Epm.EstamosAhi/Epm.EstamosAhi.Infraestructura/obj/Release/Epm.EstamosAhi.Infraestructura.csproj.CoreCompileInputs.cache
+/Users/dieberroam/Documents/epm/Movilidad/Xamarin/Epm.EstamosAhi/Epm.EstamosAhi.Infraestructura/obj/Release/Epm.EstamosAhi.Infraestructura.dll
+/Users/dieberroam/Documents/epm/Movilidad/Xamarin/Epm.EstamosAhi/Epm.EstamosAhi.Infraestructura/obj/Release/Epm.EstamosAhi.Infraestructura.pdb

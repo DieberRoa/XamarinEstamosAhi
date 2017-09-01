@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{59E2A463-1739-4CB2-B452-A784C47275C6}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Epm.EstamosAhi.Core/VistaModelos/VistaModeloLogin.cs">
+    <Files>
+      <File FileName="Epm.EstamosAhi.Core/VistaModelos/VistaModeloLogin.cs" Line="80" Column="53" />
+      <File FileName="Epm.EstamosAhi.Core/VistaModelos/ErroresValidacion.cs" Line="1" Column="1" />
+      <File FileName="Epm.EstamosAhi.Core/Repositorio/Local/RepositorioLogin.cs" Line="19" Column="1" />
+      <File FileName="Epm.EstamosAhi.Core/VistaModelos/BaseValidacion.cs" Line="31" Column="28" />
+      <File FileName="Epm.EstamosAhi.Infraestructura/Dto/RespuestaLogin.cs" Line="16" Column="1" />
+      <File FileName="Epm.EstamosAhi.Infraestructura/Dto/SolicitudLogin.cs" Line="9" Column="32" />
+      <File FileName="Epm.EstamosAhi.Infraestructura/Servicios/ClienteRest.cs" Line="1" Column="1" />
+      <File FileName="Epm.EstamosAhi.Core/Repositorio/IRepositorioLogin.cs" Line="15" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Mobile.Epm.EstamosAhi.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.989FF192-7163-4E4A-A490-BDCD46708804" />
+  <MonoDevelop.Ide.ItemProperties.Mobile.Epm.EstamosAhi.Android PreferredExecutionTarget="Android.Versio60" />
+  <MultiItemStartupConfigurations />
+</Properties>
