@@ -26,7 +26,7 @@ namespace Epm.EstamosAhi
 		public static void EstablecerSplash()
 		{
 			var page = new Splash();
-            page.BindingContext = ContenedorDeDependencia.Localizador.ObtenerClase<VistaModeloLogin>();
+            //page.BindingContext = ContenedorDeDependencia.Localizador.ObtenerClase<LoginViewModel>();
 			NavigationPage = new NavigationPage(page);
 			NavigationPage.SetHasNavigationBar(page, false);
 			Current.MainPage = NavigationPage;
@@ -35,7 +35,7 @@ namespace Epm.EstamosAhi
 		public static void EstablecerLogin()
 		{
 			var page = new Login();
-			page.BindingContext = ContenedorDeDependencia.Localizador.ObtenerClase<VistaModeloLogin>();
+			page.BindingContext = ContenedorDeDependencia.Localizador.ObtenerClase<LoginViewModel>();
 			NavigationPage = new NavigationPage(page);
 			NavigationPage.SetHasNavigationBar(page, false);
 			Current.MainPage = NavigationPage;

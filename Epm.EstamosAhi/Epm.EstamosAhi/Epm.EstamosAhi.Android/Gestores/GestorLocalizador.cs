@@ -14,7 +14,7 @@ namespace Epm.EstamosAhi.Droid.Gestores
     {
         static GestorLocalizador(){
 			ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
-			SimpleIoc.Default.Register<VistaModeloLogin>();
+			SimpleIoc.Default.Register<LoginViewModel>();
             SimpleIoc.Default.Register<INetwork, GestorNetwork>();
 			SimpleIoc.Default.Register<IDialogo, GestorDialogo>();
 			SimpleIoc.Default.Register<IRepositorioLogin, RepositorioLogin>();

@@ -1,8 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Epm.EstamosAhi.Dashboard">
-	<ContentPage.Content>
-        <StackLayout BackgroundColor = "White">
-            
-        </StackLayout>
-	</ContentPage.Content>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="Epm.EstamosAhi.Dashboard"
+    BackgroundColor="White">
+    <ContentPage.Content>
+        <Grid ColumnSpacing="0" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="60*" />
+                <RowDefinition Height="30*" />
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Row="0" BackgroundColor="White" VerticalOptions="FillAndExpand" Spacing="0">
+                <Grid VerticalOptions="FillAndExpand" ColumnSpacing="0" RowSpacing="0" Padding="5,0,0,0">
+                    <Grid.ColumnDefinitions>
+                               <ColumnDefinition Width="80*"/>
+                                <ColumnDefinition Width="20*"/>
+                    </Grid.ColumnDefinitions>  
+                    <Label TextColor="Black" Grid.Column="0" 
+                        VerticalOptions="FillAndExpand" 
+                        VerticalTextAlignment="Center">Estamos ahí</Label>
+                    <Image Source="icon_menu" Grid.Column="1" Scale=".3" />
+                </Grid>
+            </StackLayout>
+            <StackLayout Grid.Row="1" BackgroundColor="White" VerticalOptions="FillAndExpand">
+                <Grid VerticalOptions="FillAndExpand" RowSpacing="0" ColumnSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="33*" />
+                        <RowDefinition Height="33*" />
+                        <RowDefinition Height="33*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                       <ColumnDefinition Width="33*"/>
+                        <ColumnDefinition Width="33*"/>
+                        <ColumnDefinition Width="33*"/>
+                    </Grid.ColumnDefinitions> 
+                    <Button BorderRadius="0" Grid.Column="0" Grid.Row="0" Image="bt_noticias.png" VerticalOptions="FillAndExpand" BackgroundColor="#7DB901"/>
+                    <Button BorderRadius="0" Grid.Column="1" Grid.Row="0" Image="bt_lineas_de_atencion.png" VerticalOptions="FillAndExpand" BackgroundColor="#50A835"/>
+                    <Button BorderRadius="0" Grid.Column="2" Grid.Row="0" Image="bt_oficinas_de_atencion.png" VerticalOptions="FillAndExpand" BackgroundColor="#2A9F00"/>
+                    <Button BorderRadius="0" Grid.Column="0" Grid.Row="1" Image="icon_container_report_fraud.png" VerticalOptions="FillAndExpand" BackgroundColor="#258E2E"/>     
+                    <Button BorderRadius="0" Grid.Column="1" Grid.Row="1" Image="bt_factura.png" VerticalOptions="FillAndExpand" BackgroundColor="#008F47"/>
+                    <Button BorderRadius="0" Grid.Column="2" Grid.Row="1" Image="icon_container_contact_transparent.png" VerticalOptions="FillAndExpand" BackgroundColor="#7DB901"/>
+                    <Button BorderRadius="0" Grid.Column="0" Grid.Row="2" Image="bt_reportes" VerticalOptions="FillAndExpand" BackgroundColor="#2A9F00"/>
+                    <Button BorderRadius="0" Grid.Column="1" Grid.Row="2" Image="bt_eventos.png" VerticalOptions="FillAndExpand" BackgroundColor="#258E2E"/>
+                    <Button BorderRadius="0" Grid.Column="2" Grid.Row="2" Image="bt_gnv.png" VerticalOptions="FillAndExpand" BackgroundColor="#50A835"/>
+                </Grid>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>

@@ -8,9 +8,9 @@ using Epm.EstamosAhi.Infraestructura.Recursos;
 
 namespace Epm.EstamosAhi.Core.Repositorio.Local
 {
-    public class RepositorioLogin 
+    public class RepositorioLogin : IRepositorioLogin
     {
-        private RespuestaLogin Autenticar(SolicitudLogin solicitud)
+        public RespuestaLogin Autenticar(SolicitudLogin solicitud)
         {
             if (solicitud == null)
             {
@@ -27,9 +27,6 @@ namespace Epm.EstamosAhi.Core.Repositorio.Local
             return salida;
 
         }
-
-      
-
 
     }
 }

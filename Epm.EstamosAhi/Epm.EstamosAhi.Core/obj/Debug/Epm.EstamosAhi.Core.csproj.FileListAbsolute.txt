@@ -44,6 +44,7 @@
 /Users/dieberroam/Documents/epm/Movilidad/Xamarin/XamarinEstamosAhi/Epm.EstamosAhi/Epm.EstamosAhi.Core/bin/Debug/GalaSoft.MvvmLight.Extras.pdb
 /Users/dieberroam/Documents/epm/Movilidad/Xamarin/XamarinEstamosAhi/Epm.EstamosAhi/Epm.EstamosAhi.Core/bin/Debug/GalaSoft.MvvmLight.Extras.xml
 /Users/dieberroam/Documents/epm/Movilidad/Xamarin/XamarinEstamosAhi/Epm.EstamosAhi/Epm.EstamosAhi.Core/bin/Debug/Microsoft.Practices.ServiceLocation.pdb
+/Users/dieberroam/Documents/epm/Movilidad/Xamarin/XamarinEstamosAhi/Epm.EstamosAhi/Epm.EstamosAhi.Core/bin/Debug/Microsoft.Practices.ServiceLocation.dll.mdb
 /Users/dieberroam/Documents/epm/Movilidad/Xamarin/XamarinEstamosAhi/Epm.EstamosAhi/Epm.EstamosAhi.Core/bin/Debug/Microsoft.Practices.ServiceLocation.xml
 /Users/dieberroam/Documents/epm/Movilidad/Xamarin/XamarinEstamosAhi/Epm.EstamosAhi/Epm.EstamosAhi.Core/bin/Debug/Xamarin.Forms.Core.pdb
 /Users/dieberroam/Documents/epm/Movilidad/Xamarin/XamarinEstamosAhi/Epm.EstamosAhi/Epm.EstamosAhi.Core/bin/Debug/Xamarin.Forms.Core.dll.mdb
@@ -58,4 +59,3 @@
 /Users/dieberroam/Documents/epm/Movilidad/Xamarin/XamarinEstamosAhi/Epm.EstamosAhi/Epm.EstamosAhi.Core/obj/Debug/Epm.EstamosAhi.Core.csproj.CoreCompileInputs.cache
 /Users/dieberroam/Documents/epm/Movilidad/Xamarin/XamarinEstamosAhi/Epm.EstamosAhi/Epm.EstamosAhi.Core/obj/Debug/Epm.EstamosAhi.Core.dll
 /Users/dieberroam/Documents/epm/Movilidad/Xamarin/XamarinEstamosAhi/Epm.EstamosAhi/Epm.EstamosAhi.Core/obj/Debug/Epm.EstamosAhi.Core.pdb
-/Users/dieberroam/Documents/epm/Movilidad/Xamarin/XamarinEstamosAhi/Epm.EstamosAhi/Epm.EstamosAhi.Core/bin/Debug/Microsoft.Practices.ServiceLocation.dll.mdb

@@ -16,7 +16,8 @@ namespace Epm.EstamosAhi
         protected override void OnAppearing(){
 			if (this.BindingContext != null)
 			{
-				VistaModeloLogin vistaModeloLogin = (VistaModeloLogin)this.BindingContext;
+				LoginViewModel vistaModeloLogin = (LoginViewModel)this.BindingContext;
+                vistaModeloLogin.Comenzar();
 			}
         }
     }

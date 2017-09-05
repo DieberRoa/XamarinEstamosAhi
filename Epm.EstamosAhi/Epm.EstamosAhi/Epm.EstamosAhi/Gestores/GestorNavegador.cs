@@ -20,13 +20,14 @@ namespace Epm.EstamosAhi.Gestores
                     App.EstablecerSplash();
                     break;
                 case TiposDeVista.LineasDeAtencion:
+                    App.EstablecerPaginaConPush(new LineasDeAtencion());
                     break;
             }
         }
 
         async public void Regresar()
         {
-            throw new NotImplementedException();
+            await App.NavigationPage.PopAsync();
         }
     }
 }

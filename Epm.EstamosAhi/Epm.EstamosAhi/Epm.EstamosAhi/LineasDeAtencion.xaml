@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Epm.EstamosAhi.LineasDeAtencion" BackgroundColor="White">
+    <ContentPage.Content>
+        <Grid ColumnSpacing="0" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="20*" />
+                <RowDefinition Height="70*" />
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Row="0" VerticalOptions="FillAndExpand">
+                <Grid VerticalOptions="FillAndExpand" ColumnSpacing="0" RowSpacing="0" Padding="0,0,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10*" />
+                        <ColumnDefinition Width="80*" />
+                        <ColumnDefinition Width="10*" />
+                    </Grid.ColumnDefinitions>
+                    <Image Source="icon_menu" Grid.Column="0" Scale=".3" />
+                    <Label TextColor="Black" Grid.Column="1" 
+                    VerticalOptions="FillAndExpand" 
+                    VerticalTextAlignment="Center">Líneas de atención</Label>
+                    <Image Source="icon_menu" Grid.Column="2" Scale=".3" />
+                </Grid>
+            </StackLayout>
+            <StackLayout Grid.Row="1" VerticalOptions="FillAndExpand">
+                <RelativeLayout>
+                    <Image Aspect="Fill" Source="fondo_lineas_de_atencion" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}" />
+                    <Grid RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}" Padding="10,10,10,10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Height="10*" />
+                            <ColumnDefinition Height="80*" />
+                            <ColumnDefinition Height="10*" />
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.Column="1" Source="lineas_de_atencion_cabezote" VerticalOptions="FillAndExpand" Scale="1.4" />
+                    </Grid>
+                </RelativeLayout>
+            </StackLayout>
+            <StackLayout Grid.Row="2" VerticalOptions="FillAndExpand">
+                <Grid ColumnSpacing="0" RowSpacing="0" VerticalOptions="FillAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="32*" />
+                        <RowDefinition Height="17*" />
+                        <RowDefinition Height="17*" />
+                        <RowDefinition Height="17*" />
+                        <RowDefinition Height="17*" />
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" TextColor="Black" HorizontalTextAlignment="Center" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center" Margin="20,0,20,0">                        
+                        Ten presente que todas las llamadas que realices desde este dispositivo tendrán costo según la tarifa de tu operador de telefonía.
+                    </Label>
+                    <StackLayout Grid.Row="1" VerticalOptions="FillAndExpand" >
+                        <Grid ColumnSpacing="0" RowSpacing="0" VerticalOptions="FillAndExpand">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="10*" />
+                                <RowDefinition Height="10*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Height="90*" />
+                                <ColumnDefinition Height="10*" />
+                            </Grid.ColumnDefinitions>
+                            <Label TextColor="#50A835" Grid.Row="0" Grid.Column="0"  
+                                VerticalOptions="FillAndExpand" 
+                                VerticalTextAlignment="Center" >Medellín y Valle de Aburrá</Label>
+                            <Label TextColor="Gray" Grid.Row="1" Grid.Column="0"  
+                                VerticalOptions="FillAndExpand" 
+                                VerticalTextAlignment="Center" >(034) 640 2345</Label>
+                            <Image Grid.Column="1" Grid.ColumnSpan="2" 
+                                Source="icon_tel_prf_verde" Scale="0.6" 
+                                VerticalOptions="Center" HorizontalOptions="Center"/>
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout Grid.Row="2" VerticalOptions="FillAndExpand" >
+                        <Grid ColumnSpacing="0" RowSpacing="0" VerticalOptions="FillAndExpand">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="10*" />
+                                <RowDefinition Height="10*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Height="90*" />
+                                <ColumnDefinition Height="10*" />
+                            </Grid.ColumnDefinitions>
+                            <Label TextColor="#50A835" Grid.Row="0" Grid.Column="0"  
+                                VerticalOptions="FillAndExpand" 
+                                VerticalTextAlignment="Center" >Medellín y Valle de Aburrá</Label>
+                            <Label TextColor="Gray" Grid.Row="1" Grid.Column="0"  
+                                VerticalOptions="FillAndExpand" 
+                                VerticalTextAlignment="Center" >(034) 640 2345</Label>
+                            <Image Grid.Column="1" Grid.ColumnSpan="2" 
+                                Source="icon_tel_prf_verde" Scale="0.6" 
+                                VerticalOptions="Center" HorizontalOptions="Center"/>
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout Grid.Row="1" VerticalOptions="FillAndExpand" >
+                        <Grid ColumnSpacing="3" RowSpacing="0" VerticalOptions="FillAndExpand">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="10*" />
+                                <RowDefinition Height="10*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Height="90*" />
+                                <ColumnDefinition Height="10*" />
+                            </Grid.ColumnDefinitions>
+                            <Label TextColor="#50A835" Grid.Row="0" Grid.Column="0"  
+                                VerticalOptions="FillAndExpand" 
+                                VerticalTextAlignment="Center" >Medellín y Valle de Aburrá</Label>
+                            <Label TextColor="Gray" Grid.Row="1" Grid.Column="0"  
+                                VerticalOptions="FillAndExpand" 
+                                VerticalTextAlignment="Center" >(034) 640 2345</Label>
+                            <Image Grid.Column="1" Grid.ColumnSpan="2" 
+                                Source="icon_tel_prf_verde" Scale="0.6" 
+                                VerticalOptions="Center" HorizontalOptions="Center"/>
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout Grid.Row="1" VerticalOptions="FillAndExpand" >
+                        <Grid ColumnSpacing="4" RowSpacing="0" VerticalOptions="FillAndExpand">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="10*" />
+                                <RowDefinition Height="10*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Height="90*" />
+                                <ColumnDefinition Height="10*" />
+                            </Grid.ColumnDefinitions>
+                            <Label TextColor="#50A835" Grid.Row="0" Grid.Column="0"  
+                                VerticalOptions="FillAndExpand" 
+                                VerticalTextAlignment="Center" >Medellín y Valle de Aburrá</Label>
+                            <Label TextColor="Gray" Grid.Row="1" Grid.Column="0"  
+                                VerticalOptions="FillAndExpand" 
+                                VerticalTextAlignment="Center" >(034) 640 2345</Label>
+                            <Image Grid.Column="1" Grid.ColumnSpan="2" 
+                                Source="icon_tel_prf_verde" Scale="0.6" 
+                                VerticalOptions="Center" HorizontalOptions="Center"/>
+                        </Grid>
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
