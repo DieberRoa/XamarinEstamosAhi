@@ -50,6 +50,7 @@
     <Compile Include="Servicios\ClienteRest.cs" />
     <Compile Include="Servicios\Jotason.cs" />
     <Compile Include="Interfases\IDialogo.cs" />
+    <Compile Include="ContenedorDeDependencia.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Recursos\AppRecursos.resx" />

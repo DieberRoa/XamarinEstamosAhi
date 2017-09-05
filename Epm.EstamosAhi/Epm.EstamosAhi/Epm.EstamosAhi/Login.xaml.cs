@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Threading.Tasks;
 using Xamarin.Forms;
+using Epm.EstamosAhi.Infraestructura.Enumerados;
 
 namespace Epm.EstamosAhi
 {
@@ -11,5 +12,6 @@ namespace Epm.EstamosAhi
         {
             InitializeComponent();
         }
+
     }
 }

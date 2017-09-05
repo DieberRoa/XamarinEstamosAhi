@@ -10,6 +10,7 @@ namespace Epm.EstamosAhi.Infraestructura.Enumerados
     {
         Splash,
         Login,
-        Dashboard
+        Dashboard,
+        LineasDeAtencion
     }
 }

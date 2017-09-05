@@ -1,19 +1,64 @@
-﻿<Properties StartupConfiguration="{59E2A463-1739-4CB2-B452-A784C47275C6}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Epm.EstamosAhi.Core/VistaModelos/VistaModeloLogin.cs">
+﻿<Properties StartupConfiguration="{0F29CD87-030A-45A9-8BF9-7621FCDF807E}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Epm.EstamosAhi/Epm.EstamosAhi/App.xaml.cs">
     <Files>
-      <File FileName="Epm.EstamosAhi.Core/VistaModelos/VistaModeloLogin.cs" Line="80" Column="53" />
-      <File FileName="Epm.EstamosAhi.Core/VistaModelos/ErroresValidacion.cs" Line="1" Column="1" />
-      <File FileName="Epm.EstamosAhi.Core/Repositorio/Local/RepositorioLogin.cs" Line="19" Column="1" />
-      <File FileName="Epm.EstamosAhi.Core/VistaModelos/BaseValidacion.cs" Line="31" Column="28" />
-      <File FileName="Epm.EstamosAhi.Infraestructura/Dto/RespuestaLogin.cs" Line="16" Column="1" />
-      <File FileName="Epm.EstamosAhi.Infraestructura/Dto/SolicitudLogin.cs" Line="9" Column="32" />
-      <File FileName="Epm.EstamosAhi.Infraestructura/Servicios/ClienteRest.cs" Line="1" Column="1" />
-      <File FileName="Epm.EstamosAhi.Core/Repositorio/IRepositorioLogin.cs" Line="15" Column="1" />
+      <File FileName="Epm.EstamosAhi/Epm.EstamosAhi.Android/MainActivity.cs" Line="25" Column="1" />
+      <File FileName="Epm.EstamosAhi/Epm.EstamosAhi/App.xaml.cs" Line="29" Column="100" />
+      <File FileName="Epm.EstamosAhi/Epm.EstamosAhi.Android/Gestores/GestorLocalizador.cs" Line="17" Column="47" />
+      <File FileName="Epm.EstamosAhi.Core/Repositorio/Local/RepositorioLogin.cs" Line="9" Column="11" />
+      <File FileName="Epm.EstamosAhi/Epm.EstamosAhi/Gestores/GestorNavegador.cs" Line="27" Column="37" />
+      <File FileName="Epm.EstamosAhi.Infraestructura/Enumerados/TiposDeVista.cs" Line="17" Column="1" />
+      <File FileName="Epm.EstamosAhi/Epm.EstamosAhi.Android/Gestores/GestorNetwork.cs" Line="22" Column="19" />
+      <File FileName="Epm.EstamosAhi/Epm.EstamosAhi/obj/Debug/Epm.EstamosAhi.App.xaml.g.cs" Line="21" Column="1" />
+      <File FileName="Epm.EstamosAhi/Epm.EstamosAhi/Splash.xaml.cs" Line="14" Column="1" />
+      <File FileName="Epm.EstamosAhi/Epm.EstamosAhi/obj/Debug/Epm.EstamosAhi.Splash.xaml.g.cs" Line="21" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Epm.EstamosAhi" expanded="True">
+            <Node name="Core" expanded="True">
+              <Node name="Epm.EstamosAhi" expanded="True">
+                <Node name="References" expanded="True" />
+                <Node name="Gestores" expanded="True" />
+                <Node name="App.xaml" expanded="True">
+                  <Node name="App.xaml.cs" selected="True" />
+                </Node>
+                <Node name="Dashboard.xaml" expanded="True" />
+                <Node name="Login.xaml" expanded="True" />
+                <Node name="Splash.xaml" expanded="True" />
+              </Node>
+              <Node name="Epm.EstamosAhi.Core" expanded="True">
+                <Node name="Api" expanded="True" />
+                <Node name="Properties" expanded="True" />
+                <Node name="Repositorio" expanded="True">
+                  <Node name="Local" expanded="True" />
+                </Node>
+                <Node name="VistaModelos" expanded="True" />
+              </Node>
+              <Node name="Epm.EstamosAhi.Infraestructura" expanded="True">
+                <Node name="Enumerados" expanded="True" />
+                <Node name="Interfases" expanded="True" />
+                <Node name="Servicios" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Mobile" expanded="True">
+              <Node name="Epm.EstamosAhi.Android" expanded="True">
+                <Node name="References" expanded="True" />
+                <Node name="Packages" expanded="True" />
+                <Node name="Gestores" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/dieberroam/Documents/epm/Movilidad/Xamarin/XamarinEstamosAhi/Epm.EstamosAhi/Epm.EstamosAhi/Epm.EstamosAhi/Splash.xaml.cs" relfile="Epm.EstamosAhi/Epm.EstamosAhi/Splash.xaml.cs" line="19" column="58" />
+      <Breakpoint file="/Users/dieberroam/Documents/epm/Movilidad/Xamarin/XamarinEstamosAhi/Epm.EstamosAhi/Epm.EstamosAhi/Epm.EstamosAhi.Android/Gestores/GestorLocalizador.cs" relfile="Epm.EstamosAhi/Epm.EstamosAhi.Android/Gestores/GestorLocalizador.cs" line="17" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Mobile.Epm.EstamosAhi.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.989FF192-7163-4E4A-A490-BDCD46708804" />

@@ -64,29 +64,52 @@ namespace Epm.EstamosAhi.Core.VistaModelos
 
         public ICommand ComandoAutenticar { get { return new RelayCommand(Autenticar); }}
 
-        async private void Autenticar(){
-
-            IsBusy = true;
-            Validate();
-            if (IsValid)
+        async private void Autenticar()
+        {
+            try
             {
-                if (GestorNetwork.EstaLaRedDisponible)
+                IsBusy = true;
+                Validate();
+                if (IsValid)
                 {
-                    
-                    SolicitudLogin solicitud = new SolicitudLogin();
-                    solicitud.CorreoElectronico = CorreoElectronico;
-                    solicitud.Contrasenia = Contrasenia;
+                    if (GestorNetwork.EstaLaRedDisponible)
+                    {
 
-                    RespuestaLogin respuestaLogin = GestorLogin.Autenticar(solicitud);
-                    if (respuestaLogin.Respuesta.IsSuccessStatusCode){
-                        if  (respuestaLogin.Respuesta.StatusCode == System.Net.HttpStatusCode.OK){
-                            
+                        SolicitudLogin solicitud = new SolicitudLogin();
+                        solicitud.CorreoElectronico = CorreoElectronico;
+                        solicitud.Contrasenia = Contrasenia;
+
+                        // TODO: IMplementar Async en este llamado, no tiene porque es repositorio local :P
+                        RespuestaLogin respuestaLogin = GestorLogin.Autenticar(solicitud);
+                        if (respuestaLogin.Respuesta.IsSuccessStatusCode)
+                        {
+                            if (respuestaLogin.Respuesta.StatusCode == System.Net.HttpStatusCode.OK)
+                            {
+                                IsBusy = false;
+                                await GestorNavegador.Navegar(Infraestructura.Enumerados.TiposDeVista.Dashboard);
+                            }
+
                         }
-                    }
+                        else
+                        {
+                            IsBusy = false;
+                            await GestorDialogo.MostrarMensaje("Correo o contraseña que has ingresado no corresponden a los registrados.", "Revisa tus datos");
+                        }
 
+                    }else{
+                        IsBusy = false;
+                        GestorToast.MostrarToastLargo("Verifica que tu dispositivo se encuentra conectado a internet.");
+                    }
                 }
             }
-
+            catch (Exception ex)
+            {
+                IsBusy = false;
+                await GestorDialogo.MostrarConfirmacion("Ha ocurrido un error, intentalo nuevamente.", "Error");
+            }
+            finally{
+                IsBusy = false;
+            }
         }
 
         protected override void Autovalidarse()

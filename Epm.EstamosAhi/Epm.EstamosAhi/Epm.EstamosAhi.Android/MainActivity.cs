@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Epm.EstamosAhi.Droid.Gestores;
 
 namespace Epm.EstamosAhi.Droid
 {
@@ -20,6 +21,7 @@ namespace Epm.EstamosAhi.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            App.SetLocatorService(new GestorLocalizador());
             LoadApplication(new App());
         }
     }

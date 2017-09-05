@@ -57,6 +57,8 @@
     <Compile Include="Controles\ExtendedEntry.cs" />
     <Compile Include="Controles\ExtendedListView.cs" />
     <Compile Include="Controles\ExtendedPicker.cs" />
+    <Compile Include="Gestores\GestorDialogo.cs" />
+    <Compile Include="Gestores\GestorNavegador.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml">
@@ -78,6 +80,10 @@
       <Project>{09D14084-479F-4CD6-85F9-F23727769386}</Project>
       <Name>Epm.EstamosAhi.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Epm.EstamosAhi.Infraestructura\Epm.EstamosAhi.Infraestructura.csproj">
+      <Project>{130623D5-9099-4D79-884F-48C105DCDD24}</Project>
+      <Name>Epm.EstamosAhi.Infraestructura</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
@@ -96,6 +102,7 @@
   <ItemGroup>
     <Folder Include="Convertidores\" />
     <Folder Include="Controles\" />
+    <Folder Include="Gestores\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.4.270\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.4.270\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

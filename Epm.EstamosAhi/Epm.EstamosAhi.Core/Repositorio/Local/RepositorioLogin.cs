@@ -8,16 +8,28 @@ using Epm.EstamosAhi.Infraestructura.Recursos;
 
 namespace Epm.EstamosAhi.Core.Repositorio.Local
 {
-    public class RepositorioLogin : IRepositorioLogin
+    public class RepositorioLogin 
     {
-        public RespuestaLogin Autenticar(SolicitudLogin solicitud)
+        private RespuestaLogin Autenticar(SolicitudLogin solicitud)
         {
             if (solicitud == null)
             {
                 throw new ArgumentNullException(Recursos.ObtenerValorConLlave("nombreParametroAutenticar"));
             }
+            RespuestaLogin salida = new RespuestaLogin();
+            salida.Respuesta = new System.Net.Http.HttpResponseMessage();
+            if (solicitud.CorreoElectronico == @"droa@intergrupo.com" && solicitud.Contrasenia=="Cool1976."){
+                salida.Respuesta.StatusCode = System.Net.HttpStatusCode.OK;
+            }
+            else{
+                salida.Respuesta.StatusCode = System.Net.HttpStatusCode.Unauthorized;
+            }
+            return salida;
 
-            return new RespuestaLogin() { Token = new Guid().ToString() };
         }
+
+      
+
+
     }
 }

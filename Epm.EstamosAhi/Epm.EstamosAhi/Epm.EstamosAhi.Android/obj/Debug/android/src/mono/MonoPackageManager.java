@@ -99,8 +99,15 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "Epm.EstamosAhi.Android.dll" comes first in this list. */
 		"Epm.EstamosAhi.Android.dll",
+		"Epm.EstamosAhi.Core.dll",
 		"Epm.EstamosAhi.dll",
+		"Epm.EstamosAhi.Infraestructura.dll",
 		"FormsViewGroup.dll",
+		"GalaSoft.MvvmLight.dll",
+		"GalaSoft.MvvmLight.Extras.dll",
+		"GalaSoft.MvvmLight.Platform.dll",
+		"Microsoft.Practices.ServiceLocation.dll",
+		"ServiceLocation.dll",
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",
 		"Xamarin.Android.Support.Design.dll",
 		"Xamarin.Android.Support.v4.dll",
@@ -113,6 +120,7 @@ class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
+		"Newtonsoft.Json.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};
