@@ -18,7 +18,8 @@
                     </Grid.ColumnDefinitions>  
                     <Label TextColor="Black" Grid.Column="0" 
                         VerticalOptions="FillAndExpand" 
-                        VerticalTextAlignment="Center">Estamos ahí</Label>
+                        VerticalTextAlignment="Center"
+                        StyleId="VAG Round">Estamos ahí</Label>
                     <Image Source="icon_menu" Grid.Column="1" Scale=".3" />
                 </Grid>
             </StackLayout>

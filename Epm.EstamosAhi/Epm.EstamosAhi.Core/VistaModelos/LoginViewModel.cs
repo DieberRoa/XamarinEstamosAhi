@@ -74,8 +74,9 @@ namespace Epm.EstamosAhi.Core.VistaModelos
             try
             {
                 IsBusy = true;
-                Validate();
-                if (IsValid)
+                //En caso de usar validadores en el XAML
+                //Validate();
+                if (EsValidaLaInformacion())
                 {
                     if (GestorNetwork.EstaLaRedDisponible)
                     {
@@ -84,24 +85,21 @@ namespace Epm.EstamosAhi.Core.VistaModelos
                         solicitud.CorreoElectronico = CorreoElectronico;
                         solicitud.Contrasenia = Contrasenia;
 
-                        // TODO: IMplementar Async en este llamado, no tiene porque es repositorio local :P
+                        // TODO: IMplementar Async en este llamado, no tiene porque es repositorio local 
                         RespuestaLogin respuestaLogin = GestorLogin.Autenticar(solicitud);
-                        if (respuestaLogin.Respuesta.IsSuccessStatusCode)
-                        {
-                            if (respuestaLogin.Respuesta.StatusCode == System.Net.HttpStatusCode.OK)
-                            {
-                                IsBusy = false;
-                                await GestorNavegador.Navegar(Infraestructura.Enumerados.TiposDeVista.Dashboard);
-                            }
+						if (respuestaLogin.Respuesta.StatusCode == System.Net.HttpStatusCode.OK)
+						{
+							IsBusy = false;
+							await GestorNavegador.Navegar(Infraestructura.Enumerados.TiposDeVista.Dashboard);
+						}
+						else
+						{
+							IsBusy = false;
+							await GestorDialogo.MostrarMensaje("Correo o contraseña que has ingresado no corresponden a los registrados.", "Revisa tus datos");
+						}
 
-                        }
-                        else
-                        {
-                            IsBusy = false;
-                            await GestorDialogo.MostrarMensaje("Correo o contraseña que has ingresado no corresponden a los registrados.", "Revisa tus datos");
-                        }
-
-                    }else{
+                    }else
+                    {
                         IsBusy = false;
                         GestorToast.MostrarToastLargo("Verifica que tu dispositivo se encuentra conectado a internet.");
                     }
@@ -124,10 +122,19 @@ namespace Epm.EstamosAhi.Core.VistaModelos
 
         protected override void Autovalidarse()
         {
-            var IsValid = EstanLlenosLosCampos() && EstaCorrectoElFormatoDelCorreoElectronico();
+            var IsValid = EsValidaLaInformacion();
         }
 
-        private bool EstanLlenosLosCampos(){
+        private bool EsValidaLaInformacion(){
+			bool salida = !EstanVaciosLosCampos();
+			if (salida)
+			{
+				salida = EstaCorrectoElFormatoDelCorreoElectronico();
+			}
+            return salida;
+        }
+
+        private bool EstanVaciosLosCampos(){
             bool esVacio = false;
             string mensaje = "";
 			if (string.IsNullOrEmpty(CorreoElectronico))
@@ -142,9 +149,9 @@ namespace Epm.EstamosAhi.Core.VistaModelos
                 }
             }
             if (esVacio){
-                GestorDialogo.MostrarMensaje("Autenticar",mensaje);
+                GestorDialogo.MostrarMensaje(mensaje,"Autenticar");
             }
-            return !esVacio;
+            return esVacio;
         }
 
         private bool EstaCorrectoElFormatoDelCorreoElectronico(){
@@ -161,7 +168,7 @@ namespace Epm.EstamosAhi.Core.VistaModelos
                 esCorrecto = false;
 			}
             if (!esCorrecto){
-                GestorDialogo.MostrarMensaje("Autenticar", "Debes ingresar una dirección válida de correo electrónico.");
+                GestorDialogo.MostrarMensaje("Debes ingresar una dirección válida de correo electrónico.","Autenticar");
             }
             return esCorrecto;
         }

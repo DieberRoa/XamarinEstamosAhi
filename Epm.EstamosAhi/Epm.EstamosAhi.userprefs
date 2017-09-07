@@ -1,22 +1,37 @@
-﻿<Properties StartupConfiguration="{0F29CD87-030A-45A9-8BF9-7621FCDF807E}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Epm.EstamosAhi/Epm.EstamosAhi/LineasDeAtencion.xaml">
+﻿<Properties StartupConfiguration="{59E2A463-1739-4CB2-B452-A784C47275C6}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Epm.EstamosAhi/Epm.EstamosAhi.iOS/Info.plist">
     <Files>
-      <File FileName="Epm.EstamosAhi/Epm.EstamosAhi/LineasDeAtencion.xaml" Line="68" Column="32" />
+      <File FileName="Epm.EstamosAhi.Core/VistaModelos/LoginViewModel.cs" Line="94" Column="8" />
+      <File FileName="Epm.EstamosAhi/Epm.EstamosAhi.Android/Renderizadores/ExtenderLabel.cs" Line="16" Column="13" />
+      <File FileName="Epm.EstamosAhi/Epm.EstamosAhi.Android/Renderizadores/EntryRenderer.cs" Line="18" Column="29" />
+      <File FileName="Epm.EstamosAhi/Epm.EstamosAhi/Login.xaml" Line="60" Column="127" />
+      <File FileName="Epm.EstamosAhi/Epm.EstamosAhi/Login.xaml.cs" Line="10" Column="4" />
+      <File FileName="Epm.EstamosAhi/Epm.EstamosAhi/Dashboard.xaml" Line="24" Column="24" />
+      <File FileName="Epm.EstamosAhi/Epm.EstamosAhi/App.xaml.cs" Line="57" Column="9" />
+      <File FileName="Epm.EstamosAhi.Core/Repositorio/Local/RepositorioLogin.cs" Line="29" Column="10" />
+      <File FileName="Epm.EstamosAhi/Epm.EstamosAhi.iOS/Info.plist" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Epm.EstamosAhi" expanded="True">
             <Node name="Core" expanded="True">
-              <Node name="Epm.EstamosAhi" expanded="True">
-                <Node name="LineasDeAtencion.xaml" selected="True" />
+              <Node name="Epm.EstamosAhi" expanded="True" />
+              <Node name="Epm.EstamosAhi.Core" expanded="True">
+                <Node name="Repositorio" expanded="True">
+                  <Node name="Local" expanded="True" />
+                </Node>
+                <Node name="VistaModelos" expanded="True" />
               </Node>
             </Node>
             <Node name="Mobile" expanded="True">
               <Node name="Epm.EstamosAhi.Android" expanded="True">
-                <Node name="Resources" expanded="True">
-                  <Node name="drawable" expanded="True" />
-                </Node>
+                <Node name="Assets" expanded="True" />
+                <Node name="Renderizadores" expanded="True" />
+              </Node>
+              <Node name="Epm.EstamosAhi.iOS" expanded="True">
+                <Node name="Resources" expanded="True" />
+                <Node name="Info.plist" selected="True" />
               </Node>
             </Node>
           </Node>
