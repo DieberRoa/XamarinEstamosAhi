@@ -11,8 +11,8 @@
 namespace Epm.EstamosAhi {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/dieberroam/Documents/epm/Movilidad/Xamarin/Epm.EstamosAhi/Epm.EstamosAhi/E" +
-        "pm.EstamosAhi/Dashboard.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/dieberroam/Documents/epm/Movilidad/Xamarin/XamarinEstamosAhi/Epm.EstamosAh" +
+        "i/Epm.EstamosAhi/Epm.EstamosAhi/Dashboard.xaml")]
     public partial class Dashboard : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

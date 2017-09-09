@@ -11,8 +11,8 @@
 namespace Epm.EstamosAhi {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/dieberroam/Documents/epm/Movilidad/Xamarin/Epm.EstamosAhi/Epm.EstamosAhi/E" +
-        "pm.EstamosAhi/Login.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/dieberroam/Documents/epm/Movilidad/Xamarin/XamarinEstamosAhi/Epm.EstamosAh" +
+        "i/Epm.EstamosAhi/Epm.EstamosAhi/Login.xaml")]
     public partial class Login : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

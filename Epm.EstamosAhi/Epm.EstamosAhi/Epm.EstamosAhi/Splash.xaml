@@ -5,8 +5,8 @@
 
      <ContentPage.Content>
         
-                <StackLayout VerticalOptions="StartAndExpand" BackgroundColor="White">
-                    <Image Source="splash">
+                <StackLayout VerticalOptions="FillAndExpand" BackgroundColor="White">
+                    <Image Source="splash" VerticalOptions="FillAndExpand">
                     </Image>
                 </StackLayout>
             

@@ -62,6 +62,7 @@
     <Compile Include="LineasDeAtencion.xaml.cs">
       <DependentUpon>LineasDeAtencion.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controles\PlaceholderEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml">

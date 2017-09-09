@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Epm.EstamosAhi.iOS.Gestores;
 
 using Foundation;
 using UIKit;
@@ -23,6 +24,7 @@ namespace Epm.EstamosAhi.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            App.SetLocatorService(new GestorLocalizador());
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

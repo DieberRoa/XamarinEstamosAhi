@@ -1,7 +1,9 @@
-﻿using System;
-using Epm.EstamosAhi.Infraestructura.Interfases;
+﻿using Epm.EstamosAhi.Infraestructura.Interfases;
 using Epm.EstamosAhi.Infraestructura.Enumerados;
 using System.Threading.Tasks;
+using Epm.EstamosAhi.Infraestructura;
+
+using Epm.EstamosAhi.Core.VistaModelos;
 
 namespace Epm.EstamosAhi.Gestores
 {
@@ -11,7 +13,7 @@ namespace Epm.EstamosAhi.Gestores
         {
             switch (vista){
                 case TiposDeVista.Dashboard:
-                    App.EstablecerPaginaConPush(new Dashboard());
+                    App.EstablecerDashboard();
                     break;
                 case TiposDeVista.Login:
                     App.EstablecerLogin();
@@ -20,7 +22,7 @@ namespace Epm.EstamosAhi.Gestores
                     App.EstablecerSplash();
                     break;
                 case TiposDeVista.LineasDeAtencion:
-                    App.EstablecerPaginaConPush(new LineasDeAtencion());
+                    App.EstablecerPaginaConPushAsincrono(App.CrearLineasDeAtencion());
                     break;
             }
         }

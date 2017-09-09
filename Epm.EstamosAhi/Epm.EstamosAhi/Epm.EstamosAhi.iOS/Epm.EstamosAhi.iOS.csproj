@@ -103,13 +103,14 @@
     <ITunesArtwork Include="iTunesArtwork" />
     <ITunesArtwork Include="iTunesArtwork@2x" />
     <None Include="packages.config" />
+    <Compile Include="Gestores\GestorLocalizador.cs" />
+    <Compile Include="Gestores\GestorNetwork.cs" />
+    <Compile Include="Gestores\GestorToast.cs" />
+    <Compile Include="Renderizadores\EntryRenderer.cs" />
+    <Compile Include="Renderizadores\ExtenderLabel.cs" />
+    <Compile Include="Renderizadores\ButtonRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Default-568h%402x.png" />
-    <BundleResource Include="Resources\Default-Portrait.png" />
-    <BundleResource Include="Resources\Default-Portrait%402x.png" />
-    <BundleResource Include="Resources\Default.png" />
-    <BundleResource Include="Resources\Default%402x.png" />
     <BundleResource Include="Resources\Icon-60%402x.png" />
     <BundleResource Include="Resources\Icon-60%403x.png" />
     <BundleResource Include="Resources\Icon-76.png" />
@@ -121,11 +122,72 @@
     <BundleResource Include="Resources\Icon-Small%402x.png" />
     <BundleResource Include="Resources\Icon-Small%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
-    <BundleResource Include="Resources\splash-ip.png" />
-    <BundleResource Include="Resources\splash-ip%402x.png" />
     <BundleResource Include="Resources\splash.png" />
     <BundleResource Include="Resources\splash%402x.png" />
     <BundleResource Include="Resources\splash%403x.png" />
+    <BundleResource Include="Resources\Fonts\VAG Round.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\VAGRounded BT.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\VAGRounded Lt.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\fondo_login.png" />
+    <BundleResource Include="Resources\fondo_login%402x.png" />
+    <BundleResource Include="Resources\fondo_login%403x.png" />
+    <BundleResource Include="Resources\logo_epm.png" />
+    <BundleResource Include="Resources\logo_epm%402x.png" />
+    <BundleResource Include="Resources\logo-epm%403x.png" />
+    <BundleResource Include="Resources\correo_electronico.png" />
+    <BundleResource Include="Resources\correo_electronico%402x.png" />
+    <BundleResource Include="Resources\correo_electronico%403x.png" />
+    <BundleResource Include="Resources\contrasena.png" />
+    <BundleResource Include="Resources\contrasena%402x.png" />
+    <BundleResource Include="Resources\contrasena%403x.png" />
+    <BundleResource Include="Resources\icon_container_contact_transparent.png" />
+    <BundleResource Include="Resources\icon_container_contact_transparent%402x.png" />
+    <BundleResource Include="Resources\icon_container_contact_transparent%403x.png" />
+    <BundleResource Include="Resources\bt_eventos.png" />
+    <BundleResource Include="Resources\bt_eventos%402x.png" />
+    <BundleResource Include="Resources\bt_eventos%403x.png" />
+    <BundleResource Include="Resources\bt_factura.png" />
+    <BundleResource Include="Resources\bt_factura%402x.png" />
+    <BundleResource Include="Resources\bt_factura%403x.png" />
+    <BundleResource Include="Resources\bt_gnv.png" />
+    <BundleResource Include="Resources\bt_gnv%402x.png" />
+    <BundleResource Include="Resources\bt_gnv%403x.png" />
+    <BundleResource Include="Resources\bt_lineas_de_atencion.png" />
+    <BundleResource Include="Resources\bt_lineas_de_atencion%402x.png" />
+    <BundleResource Include="Resources\bt_lineas_de_atencion%403x.png" />
+    <BundleResource Include="Resources\bt_noticias.png" />
+    <BundleResource Include="Resources\bt_noticias%402x.png" />
+    <BundleResource Include="Resources\bt_noticias%403x.png" />
+    <BundleResource Include="Resources\bt_oficinas_de_atencion.png" />
+    <BundleResource Include="Resources\bt_oficinas_de_atencion%402x.png" />
+    <BundleResource Include="Resources\bt_oficinas_de_atencion%403x.png" />
+    <BundleResource Include="Resources\bt_reportes.png" />
+    <BundleResource Include="Resources\bt_reportes%402x.png" />
+    <BundleResource Include="Resources\bt_reportes%403x.png" />
+    <BundleResource Include="Resources\fondo_lineas_de_atencion.png" />
+    <BundleResource Include="Resources\fondo_lineas_de_atencion%402x.png" />
+    <BundleResource Include="Resources\fondo_lineas_de_atencion%403x.png" />
+    <BundleResource Include="Resources\icon_container_report_fraud.png" />
+    <BundleResource Include="Resources\icon_container_report_fraud%402x.png" />
+    <BundleResource Include="Resources\icon_container_report_fraud%403x.png" />
+    <BundleResource Include="Resources\icon_tel_prf_verde.png" />
+    <BundleResource Include="Resources\icon_tel_prf_verde%402x.png" />
+    <BundleResource Include="Resources\icon_tel_prf_verde%403x.png" />
+    <BundleResource Include="Resources\lineas_de_atencion_cabezote.png" />
+    <BundleResource Include="Resources\lineas_de_atencion_cabezote%402x.png" />
+    <BundleResource Include="Resources\lineas_de_atencion_cabezote%403x.png" />
+    <BundleResource Include="Resources\icon_menu.png" />
+    <BundleResource Include="Resources\icon_menu%402x.png" />
+    <BundleResource Include="Resources\icon_menu%403x.png" />
+    <BundleResource Include="Resources\icon_back.png" />
+    <BundleResource Include="Resources\icon_back%402x.png" />
+    <BundleResource Include="Resources\icon_back%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -144,26 +206,48 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\..\packages\Xamarin.Forms.2.3.4.270\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight">
+      <HintPath>..\..\packages\MvvmLightLibs.5.3.0.0\lib\xamarin.ios10\GalaSoft.MvvmLight.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Extras">
+      <HintPath>..\..\packages\MvvmLightLibs.5.3.0.0\lib\xamarin.ios10\GalaSoft.MvvmLight.Extras.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Platform">
+      <HintPath>..\..\packages\MvvmLightLibs.5.3.0.0\lib\xamarin.ios10\GalaSoft.MvvmLight.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="ToastIOS">
+      <HintPath>..\..\..\..\..\..\..\..\Downloads\ToastIOS-1.6\lib\ios-unified\ToastIOS.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Epm.EstamosAhi\Epm.EstamosAhi.csproj">
       <Project>{FFFA2093-2288-4545-9EBE-4BB2CFBC3B87}</Project>
       <Name>Epm.EstamosAhi</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Epm.EstamosAhi.Infraestructura\Epm.EstamosAhi.Infraestructura.csproj">
+      <Project>{130623D5-9099-4D79-884F-48C105DCDD24}</Project>
+      <Name>Epm.EstamosAhi.Infraestructura</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Epm.EstamosAhi.Core\Epm.EstamosAhi.Core.csproj">
+      <Project>{09D14084-479F-4CD6-85F9-F23727769386}</Project>
+      <Name>Epm.EstamosAhi.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\Fonts\" />
+    <Folder Include="Gestores\" />
+    <Folder Include="Renderizadores\" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Resources\Fonts\VAG-Round.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </AndroidAsset>
-    <AndroidAsset Include="Resources\Fonts\VAG-Rounded-BT.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </AndroidAsset>
-    <AndroidAsset Include="Resources\Fonts\VAG-Rounded-lt-normal.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </AndroidAsset>
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default%402x.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default-568h%402x.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default-Portrait.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default-Portrait%402x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.4.270\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.4.270\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

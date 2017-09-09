@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Epm.EstamosAhi.Convertidores;
-using Epm.EstamosAhi.Infraestructura;
+﻿using Epm.EstamosAhi.Infraestructura;
 using Epm.EstamosAhi.Infraestructura.Interfases;
 using Epm.EstamosAhi.Core.VistaModelos;
 
@@ -39,6 +34,25 @@ namespace Epm.EstamosAhi
 			NavigationPage = new NavigationPage(page);
 			NavigationPage.SetHasNavigationBar(page, false);
 			Current.MainPage = NavigationPage;
+		}
+
+      	public static void EstablecerDashboard()
+		{
+			var page = new Dashboard();
+			page.BindingContext = ContenedorDeDependencia.Localizador.ObtenerClase<LoginViewModel>();
+			NavigationPage = new NavigationPage(page);
+			NavigationPage.SetHasNavigationBar(page, false);
+			Current.MainPage = NavigationPage;
+		}
+
+		public static Page CrearLineasDeAtencion()
+		{
+			var page = new LineasDeAtencion();
+			page.BindingContext = ContenedorDeDependencia.Localizador.ObtenerClase<LoginViewModel>();
+			NavigationPage = new NavigationPage(page);
+			NavigationPage.SetHasNavigationBar(page, false);
+			Current.MainPage = NavigationPage;
+            return page;
 		}
 
 		async public static void EstablecerPaginaConPush(Page page)

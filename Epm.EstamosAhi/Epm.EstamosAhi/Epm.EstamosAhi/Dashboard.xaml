@@ -19,24 +19,28 @@
                     <Label TextColor="Black" Grid.Column="0" 
                         VerticalOptions="FillAndExpand" 
                         VerticalTextAlignment="Center"
-                        StyleId="VAG Round">Estamos ahí</Label>
-                    <Image Source="icon_menu" Grid.Column="1" Scale=".3" />
+                        StyleId="VAGRounded Lt">Estamos ahí</Label>
+                    <Image Source="icon_menu" Grid.Column="1"  VerticalOptions="Center"/>
                 </Grid>
             </StackLayout>
             <StackLayout Grid.Row="1" BackgroundColor="White" VerticalOptions="FillAndExpand">
                 <Grid VerticalOptions="FillAndExpand" RowSpacing="0" ColumnSpacing="0">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="33*" />
-                        <RowDefinition Height="33*" />
+                        <RowDefinition Height="34*" />
                         <RowDefinition Height="33*" />
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                        <ColumnDefinition Width="33*"/>
-                        <ColumnDefinition Width="33*"/>
+                        <ColumnDefinition Width="34*"/>
                         <ColumnDefinition Width="33*"/>
                     </Grid.ColumnDefinitions> 
                     <Button BorderRadius="0" Grid.Column="0" Grid.Row="0" Image="bt_noticias.png" VerticalOptions="FillAndExpand" BackgroundColor="#7DB901"/>
-                    <Button BorderRadius="0" Grid.Column="1" Grid.Row="0" Image="bt_lineas_de_atencion.png" VerticalOptions="FillAndExpand" BackgroundColor="#50A835"/>
+                    <Button BorderRadius="0" Grid.Column="1" Grid.Row="0" 
+                        Image="bt_lineas_de_atencion.png" 
+                        VerticalOptions="FillAndExpand" BackgroundColor="#50A835"
+                        Command="{Binding ComandoIrALineasDeAtencion}" 
+                    />
                     <Button BorderRadius="0" Grid.Column="2" Grid.Row="0" Image="bt_oficinas_de_atencion.png" VerticalOptions="FillAndExpand" BackgroundColor="#2A9F00"/>
                     <Button BorderRadius="0" Grid.Column="0" Grid.Row="1" Image="icon_container_report_fraud.png" VerticalOptions="FillAndExpand" BackgroundColor="#258E2E"/>     
                     <Button BorderRadius="0" Grid.Column="1" Grid.Row="1" Image="bt_factura.png" VerticalOptions="FillAndExpand" BackgroundColor="#008F47"/>

@@ -10,8 +10,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
@@ -25,7 +23,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>Epm.EstamosAhi</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.Epm.EstamosAhi</string>
+	<string>com.intergrupo.Epm.EstamosAhi</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>CFBundleIconFiles</key>
@@ -52,9 +50,9 @@
 	<string>Epm.EstamosAhi</string>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Fonts/VAG-Round.ttf</string>
-		<string>Fonts/VAG-Rounded-BT.ttf</string>
-		<string>Fonts/VAG-Rounded-lt-normal.ttf</string>
+		<string>Fonts/VAG Round.ttf</string>
+		<string>Fonts/VAGRounded BT.ttf</string>
+		<string>Fonts/VAGRounded Lt.ttf</string>
 	</array>
 </dict>
 </plist>

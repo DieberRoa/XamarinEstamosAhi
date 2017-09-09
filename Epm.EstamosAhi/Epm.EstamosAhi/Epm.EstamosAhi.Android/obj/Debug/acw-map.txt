@@ -10,6 +10,14 @@ Epm.EstamosAhi.Droid.Renderizadores.ExtenderEntry, Epm.EstamosAhi.Android;md5d4f
 Epm.EstamosAhi.Droid.Renderizadores.ExtenderEntry, Epm.EstamosAhi.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d4fea63e47974f67023acc453d23988b.ExtenderEntry
 Epm.EstamosAhi.Droid.Renderizadores.ExtenderEntry;md5d4fea63e47974f67023acc453d23988b.ExtenderEntry
 epm.estamosahi.droid.renderizadores.ExtenderEntry;md5d4fea63e47974f67023acc453d23988b.ExtenderEntry
+Epm.EstamosAhi.Droid.Renderizadores.ExtenderButton, Epm.EstamosAhi.Android;md5d4fea63e47974f67023acc453d23988b.ExtenderButton
+Epm.EstamosAhi.Droid.Renderizadores.ExtenderButton, Epm.EstamosAhi.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d4fea63e47974f67023acc453d23988b.ExtenderButton
+Epm.EstamosAhi.Droid.Renderizadores.ExtenderButton;md5d4fea63e47974f67023acc453d23988b.ExtenderButton
+epm.estamosahi.droid.renderizadores.ExtenderButton;md5d4fea63e47974f67023acc453d23988b.ExtenderButton
+Epm.EstamosAhi.Droid.Renderizadores.ExtenderPlaceholderEditorRenderer, Epm.EstamosAhi.Android;md5d4fea63e47974f67023acc453d23988b.ExtenderPlaceholderEditorRenderer
+Epm.EstamosAhi.Droid.Renderizadores.ExtenderPlaceholderEditorRenderer, Epm.EstamosAhi.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d4fea63e47974f67023acc453d23988b.ExtenderPlaceholderEditorRenderer
+Epm.EstamosAhi.Droid.Renderizadores.ExtenderPlaceholderEditorRenderer;md5d4fea63e47974f67023acc453d23988b.ExtenderPlaceholderEditorRenderer
+epm.estamosahi.droid.renderizadores.ExtenderPlaceholderEditorRenderer;md5d4fea63e47974f67023acc453d23988b.ExtenderPlaceholderEditorRenderer
 GalaSoft.MvvmLight.Views.ActivityBase, GalaSoft.MvvmLight.Platform;md55e01038d7640b0d4dbbb8416c21f5b0f.ActivityBase
 GalaSoft.MvvmLight.Views.ActivityBase, GalaSoft.MvvmLight.Platform, Version=5.3.0.19037, Culture=neutral, PublicKeyToken=null;md55e01038d7640b0d4dbbb8416c21f5b0f.ActivityBase
 GalaSoft.MvvmLight.Views.ActivityBase;md55e01038d7640b0d4dbbb8416c21f5b0f.ActivityBase

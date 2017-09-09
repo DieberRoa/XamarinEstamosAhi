@@ -137,12 +137,12 @@
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Gestores\GestorLocalizador.cs" />
-    <Compile Include="ViewModel\ViewModelLocator.cs" />
-    <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="Gestores\GestorNetwork.cs" />
     <Compile Include="Gestores\GestorToast.cs" />
     <Compile Include="Renderizadores\ExtenderLabel.cs" />
-    <Compile Include="Renderizadores\EntryRenderer.cs" />
+    <Compile Include="Renderizadores\ExtenderEntry.cs" />
+    <Compile Include="Renderizadores\ExtenderButton.cs" />
+    <Compile Include="Renderizadores\ExtenderPlaceholderEditorRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -606,13 +606,13 @@
     <Folder Include="Renderizadores\" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\VAG-Round.ttf">
+    <AndroidAsset Include="Assets\VAG Round.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </AndroidAsset>
-    <AndroidAsset Include="Assets\VAG-Rounded-BT.ttf">
+    <AndroidAsset Include="Assets\VAGRounded BT.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </AndroidAsset>
-    <AndroidAsset Include="Assets\VAG-Rounded-lt-normal.ttf">
+    <AndroidAsset Include="Assets\VAGRounded Lt.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </AndroidAsset>
   </ItemGroup>

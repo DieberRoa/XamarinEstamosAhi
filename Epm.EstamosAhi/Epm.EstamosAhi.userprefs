@@ -1,50 +1,20 @@
 ﻿<Properties StartupConfiguration="{59E2A463-1739-4CB2-B452-A784C47275C6}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Epm.EstamosAhi/Epm.EstamosAhi.iOS/Info.plist">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Epm.EstamosAhi/Epm.EstamosAhi/Login.xaml">
     <Files>
-      <File FileName="Epm.EstamosAhi.Core/VistaModelos/LoginViewModel.cs" Line="94" Column="8" />
-      <File FileName="Epm.EstamosAhi/Epm.EstamosAhi.Android/Renderizadores/ExtenderLabel.cs" Line="16" Column="13" />
-      <File FileName="Epm.EstamosAhi/Epm.EstamosAhi.Android/Renderizadores/EntryRenderer.cs" Line="18" Column="29" />
-      <File FileName="Epm.EstamosAhi/Epm.EstamosAhi/Login.xaml" Line="60" Column="127" />
-      <File FileName="Epm.EstamosAhi/Epm.EstamosAhi/Login.xaml.cs" Line="10" Column="4" />
-      <File FileName="Epm.EstamosAhi/Epm.EstamosAhi/Dashboard.xaml" Line="24" Column="24" />
-      <File FileName="Epm.EstamosAhi/Epm.EstamosAhi/App.xaml.cs" Line="57" Column="9" />
-      <File FileName="Epm.EstamosAhi.Core/Repositorio/Local/RepositorioLogin.cs" Line="29" Column="10" />
+      <File FileName="Epm.EstamosAhi/Epm.EstamosAhi/Dashboard.xaml" Line="40" Column="59" />
       <File FileName="Epm.EstamosAhi/Epm.EstamosAhi.iOS/Info.plist" />
+      <File FileName="Epm.EstamosAhi/Epm.EstamosAhi.iOS/Resources/LaunchScreen.storyboard" />
+      <File FileName="Epm.EstamosAhi/Epm.EstamosAhi/LineasDeAtencion.xaml" Line="60" Column="46" />
+      <File FileName="Epm.EstamosAhi/Epm.EstamosAhi/Splash.xaml" Line="16" Column="1" />
+      <File FileName="Epm.EstamosAhi/Epm.EstamosAhi/Login.xaml" Line="81" Column="15" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Epm.EstamosAhi" expanded="True">
-            <Node name="Core" expanded="True">
-              <Node name="Epm.EstamosAhi" expanded="True" />
-              <Node name="Epm.EstamosAhi.Core" expanded="True">
-                <Node name="Repositorio" expanded="True">
-                  <Node name="Local" expanded="True" />
-                </Node>
-                <Node name="VistaModelos" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="Mobile" expanded="True">
-              <Node name="Epm.EstamosAhi.Android" expanded="True">
-                <Node name="Assets" expanded="True" />
-                <Node name="Renderizadores" expanded="True" />
-              </Node>
-              <Node name="Epm.EstamosAhi.iOS" expanded="True">
-                <Node name="Resources" expanded="True" />
-                <Node name="Info.plist" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Mobile.Epm.EstamosAhi.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.989FF192-7163-4E4A-A490-BDCD46708804" />
+  <MonoDevelop.Ide.ItemProperties.Mobile.Epm.EstamosAhi.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.51334655fbb36a42ce8a37647fcf56faaeeb7271" />
   <MonoDevelop.Ide.ItemProperties.Mobile.Epm.EstamosAhi.Android PreferredExecutionTarget="Android.Versio60" />
   <MultiItemStartupConfigurations />
 </Properties>

@@ -29,10 +29,12 @@
                                 <ColumnDefinition Width="50*" />
                             </Grid.ColumnDefinitions>
                             <StackLayout Grid.Column="0" BackgroundColor="White" Spacing="0">
-                                <Button Grid.Column="0" Text="Registrarme" TextColor="#0D9648" BackgroundColor="Transparent" FontSize="15" />
+                                <Label Grid.Column="0" Text="Registrarme" TextColor="#0D9648" BackgroundColor="Transparent"
+                                    VerticalOptions="FillAndExpand" HorizontalTextAlignment="Center" FontSize="20" StyleId="VAGRounded BT"/>
                             </StackLayout>
                             <StackLayout Grid.Column="1" BackgroundColor="White" Spacing="0">
-                                <Button Grid.Column="1" Text="Iniciar sesión" TextColor="#0D9648" BackgroundColor="Transparent" FontSize="15" />
+                                <Label Grid.Column="1" Text="Iniciar sesión" TextColor="#0D9648" BackgroundColor="Transparent" 
+                                    VerticalOptions="FillAndExpand" HorizontalTextAlignment="Center" FontSize="20" StyleId="VAGRounded BT"/>
                             </StackLayout>
                         </Grid>
                     </StackLayout>
@@ -40,8 +42,11 @@
             </StackLayout>
             <StackLayout Grid.Row="1" BackgroundColor="Transparent" Spacing="0" VerticalOptions="FillAndExpand">
                 <RelativeLayout>
-                    <Image Aspect="Fill" Source="fondo_login" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}" />
-                    <Grid RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}" Padding="10,10,10,10">
+                    <Image Aspect="Fill" Source="fondo_login" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" 
+                        RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}" />
+                    <Grid RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" 
+                        RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}" 
+                        Margin="20,20,20,20">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="20*" />
                             <ColumnDefinition Width="160*" />
@@ -55,21 +60,19 @@
                             <RowDefinition Height="32*" />
                             <RowDefinition Height="20*" />
                         </Grid.RowDefinitions>
-                        <Image Source="correo_electronico" Grid.Column="0" Grid.Row="0">
-                        </Image>
-                        <Entry Text="{Binding CorreoElectronico, Mode=TwoWay}" Grid.Column="1" StyleId="VAG-Rounded-lt-normal" Grid.Row="0" BackgroundColor="Transparent" Placeholder="Correo Electrónico" FontSize="15" />
-                        <Image Source="contrasena" Grid.Column="0" Grid.Row="2">
-                        </Image>
-                        <Entry Text="{Binding Contrasenia, Mode=TwoWay}" StyleId="VAG-Rounded-lt-normal" Grid.Column="1" Grid.Row="2" BackgroundColor="Transparent" Placeholder="Contraseña" FontSize="15" />
-                        <Label Grid.Row="4" Grid.ColumnSpan="2" FontSize="15" Text="¿Olvidaste tu contraseña?">
-                            <Label.FontFamily>
-                                <OnPlatform x:TypeArguments="x:String">
-                                    <On Platform="iOS">VAGRounded Lt</On>
-                                    <On Platform="Android">VAG-Rounded-lt-normal.ttf#VAGRounded Lt</On>
-                                </OnPlatform>
-                            </Label.FontFamily>
-                        </Label>
-                        <Button Command="{Binding ComandoAutenticar}" IsVisible="{Binding IsBusy, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter=true}" Grid.ColumnSpan="2" Grid.Row="6" Text="Ingresar ahora" BackgroundColor="#9AD432" FontSize="25" FontAttributes="Bold" />
+                        <Image Source="correo_electronico" Grid.Column="0" Grid.Row="0" Scale="0.8" VerticalOptions="Center" />
+                        <Entry Text="{Binding CorreoElectronico, Mode=TwoWay}" Grid.Column="1" Grid.Row="0" BackgroundColor="Transparent" Placeholder="Correo Electrónico" 
+                            StyleId="VAGRounded Lt" FontSize="13" TextColor="White" VerticalOptions="Center"/>
+                        <BoxView WidthRequest="1" BackgroundColor="White" Grid.ColumnSpan="2" Grid.Row="1"/>
+                        <Image Source="contrasena" Grid.Column="0" Grid.Row="2" Scale="0.8" VerticalOptions="Center" />
+                        <Entry Text="{Binding Contrasenia, Mode=TwoWay}" Grid.Column="1" Grid.Row="2" BackgroundColor="Transparent" Placeholder="Contraseña" 
+                            StyleId="VAGRounded Lt" FontSize="13" TextColor="White" VerticalOptions="Center" IsPassword="true"/>
+                        <BoxView WidthRequest="1" BackgroundColor="White" Grid.ColumnSpan="2" Grid.Row="3"/>
+                        <Label Grid.Row="4" Grid.ColumnSpan="2" Text="¿Olvidaste tu contraseña?" 
+                            StyleId="VAGRounded Lt" FontSize="13" TextColor="#9AD432" />
+                        <Button Command="{Binding ComandoAutenticar}" IsVisible="{Binding IsBusy, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter=true}" 
+                            Grid.ColumnSpan="2" Grid.Row="6" Text="Ingresar ahora" BackgroundColor="#9AD432" 
+                            StyleId="VAGRounded BT" FontSize="25" TextColor="White" BorderRadius="0" />
                     </Grid>
                 </RelativeLayout>
             </StackLayout>

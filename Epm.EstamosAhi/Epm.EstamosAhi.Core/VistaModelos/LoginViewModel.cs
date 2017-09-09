@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Epm.EstamosAhi.Infraestructura.Interfases;
+using Epm.EstamosAhi.Infraestructura.Enumerados;
 using Epm.EstamosAhi.Infraestructura.Dto;
 using Epm.EstamosAhi.Core.Repositorio;
 using GalaSoft.MvvmLight.Command;
@@ -68,6 +69,18 @@ namespace Epm.EstamosAhi.Core.VistaModelos
 		}
 
         public ICommand ComandoAutenticar { get { return new RelayCommand(Autenticar); }}
+        public ICommand ComandoIrALineasDeAtencion { get { return new RelayCommand(IrALineasDeAtencion);  }}
+        public ICommand ComandoVolver { get { return new RelayCommand(Volver); } }
+
+        async private void Volver()
+        {
+            await GestorNavegador.Navegar(TiposDeVista.Dashboard);
+		}
+
+        async private void IrALineasDeAtencion()
+        {
+            await GestorNavegador.Navegar(TiposDeVista.LineasDeAtencion); 
+        }
 
         async private void Autenticar()
         {
@@ -90,7 +103,7 @@ namespace Epm.EstamosAhi.Core.VistaModelos
 						if (respuestaLogin.Respuesta.StatusCode == System.Net.HttpStatusCode.OK)
 						{
 							IsBusy = false;
-							await GestorNavegador.Navegar(Infraestructura.Enumerados.TiposDeVista.Dashboard);
+							await GestorNavegador.Navegar(TiposDeVista.Dashboard);
 						}
 						else
 						{
